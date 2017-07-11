@@ -1,0 +1,8 @@
+{
+  "development": {
+    "mongoURL": "mongodb://localhost:27017/tdd_vending"
+  },
+  "test": {
+    "mongoURL": "mongodb://localhost:27017/tdd_vending"
+  }
+}

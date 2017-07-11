@@ -1,0 +1,25 @@
+{
+  "name": "tdd_vendingmachine",
+  "version": "1.0.0",
+  "description": "Vending machine",
+  "main": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.1",
+    "mongoose-double": "0.0.1",
+    "mongoose-float": "^1.0.2",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}
