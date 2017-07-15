@@ -8,8 +8,7 @@ mongoose.Promise = require('bluebird');
 
 //GET /api/customer/items - get a list of items
 router.get('/api/customer/items', function(req, res) {
-  items.find({})
-  .then(function(item) {
+  items.find().then(function(item) {
     if (item) {
       res.setHeader('Content-Type', 'application/json');
       res.json({status:"success", data:item});
@@ -74,7 +73,7 @@ router.post('/api/customer/items/:itemId/purchases', function(req, res) {
 
 //GET /api/vendor/purchases - get a list of all purchases with their item and date/time
 router.get('/api/vendor/purchases', function(req, res) {
-  purchases.find({})
+  purchases.find()
   .then(function(purchaseitem) {
     if (purchaseitem) {
       res.setHeader('Content-Type', 'application/json');
